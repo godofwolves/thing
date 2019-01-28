@@ -8,19 +8,28 @@
 	</head>
 
 	<body>
+	<audio id="soalin">
+<source src="soal.mp3">
+</audio>
+<audio id="bad">
+<source src="bmbkt.mp3">
+</audio>
+<audio id="jesse">
+<source src="jjkt.mp3">
+</audio>
 		<!-- 1st Column -->
-		<div class="col rams-blue center-content" id="rams-column">
+		<div class="col rams-blue center-content" id="rams-column" onclick="getElementById('soalin').play()">
 			<!-- IN THIS TASK WE ARE MAKING THE IMAGES (NOT THE DIVS) CLICKABLE -->
 			<img src="images/rams_logo.png" id="ram" class="restrict-img-size" onclick="allOpaque(this)"/>
 		</div>
 		
 		<!-- 2nd Column -->
 		<div class="col center-content hide" id="center" onclick="showTrophy(this)">
-			<img src="" id="tro" class="restrict-img-size"/>
+			<img src="" id="tro" class="restrict-img-size" onclick="getElementById('bad').play()"/>
 		</div>
 		
 		<!-- 3rd Column -->
-		<div class="col pats-silver center-content" id="pats-column">
+		<div class="col pats-silver center-content" id="pats-column" onclick="getElementById('jesse').play()">
 			<!-- IN THIS TASK WE ARE MAKING THE IMAGES (NOT THE DIVS) CLICKABLE -->
 			<img src="images/pats_logo.png" id="pat" class="restrict-img-size" onclick="removeColor(this)"/>
 		</div>
